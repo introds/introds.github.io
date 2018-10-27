@@ -17,7 +17,7 @@ Jukka-Pekka was mostly in charge of the web/js/angular side of the project, whil
 
 ### Cleaning and polishing (notebooks/ufo-cleaning.ipynb)
 
-We used Panda and Numpy Python libraries to read in and handle the data. The data had to be cleaned first; we ignored erroneus and blank fields of the location (coordinates) and time data (which was not a lot: 0.8% for locations and 8% for time info). We dropped columns that were not providing any relevant information for our purposes (date posted, duration in hrs/min since we have one in seconds). There was some city, country and state info missing so we filled in some blanks by getting the missing country data by checking whether state is one in the US; this got us from ~12k missing countries to ~4k missing countries. Then we converted date info to datetime objects separating hour, day, month and year into own columns for direct accessing. We wrote the cleaned data to new csv file for the data handling.
+We used Panda and Numpy Python libraries to read in and handle the data. The data had to be cleaned first; we dropped columns that were not providing any relevant information for our purposes (date posted, duration in hrs/min since we have one in seconds). There was some city, country and state info missing, using some interpolations we filled around 8k out of 12k missing countries. Then we converted date info to datetime objects separating hour, day, month and year into own columns for direct accessing. There were around 1k wrong format datetime which we dropped. We wrote the cleaned data to new csv file for the data handling.
 
 ### Data exploration (notebooks/ufo-exploration.ipynb and notebooks/ufo_description_processing.ipynb)
 
