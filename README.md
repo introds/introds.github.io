@@ -1,16 +1,8 @@
-# introds.github.io
-Introduction to Data Science 2018 (miniproject)
+# UFO-tracker
+Introduction to Data science 2018 (miniproject)
 
-Ideas from Kaggle site:
-- What areas of the country are most likely to have UFO sightings?
-- Are there any trends in UFO sightings over time? Do they tend to be clustered or seasonal?
-- Do clusters of UFO sightings correlate with landmarks, such as airports or government research centers?
-- What are the most common UFO descriptions?
+In this miniproject we:
+* Analyse the data to get insights of UFO sighting reports using Python and its libraries
+* Provide a tracker and prediction tool to track UFO sight locations and to predict possible future locations based on earlier sightings
 
-New idea:
-- Add weather, population... about the sight?
-- Military base, airport near the sight?
--
-
-Some new data links:
-- https://www.kaggle.com/sogun3/uspollution
+[UFO-tracker application](https://introds.github.io/)
